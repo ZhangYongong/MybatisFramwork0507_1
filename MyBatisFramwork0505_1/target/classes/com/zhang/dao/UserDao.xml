@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhang.dao.UserDao">
+<!--    根据Id进行User查询  -->
+    <select id="findById" parameterType="int" resultType="com.zhang.entity.User">
+        select * from user where id=#{id};
+    </select>
+<!--   查询所有的User -->
+    <select id="findAll" resultType="com.zhang.entity.User">
+        select * from user;
+    </select>
+<!--    根据Username查询-->
+    <select id="findByName" parameterType="String" resultType="com.zhang.entity.User">
+        select * from user where username like '%${value}%';
+    </select>
+<!--    增加User-->
+    <insert id="addUser" parameterType="com.zhang.entity.User" useGeneratedKeys="true" keyColumn="id">
+        insert into user(`username`,`birthday`,`sex`,`address`)values(#{username},#{birthday},#{sex},#{address});
+    </insert>
+<!--    更新User-->
+    <update id="updateUser" parameterType="com.zhang.entity.User">
+        update user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address} where id=#{id};
+    </update>
+<!--    删除User-->
+    <delete id="deleteUser" parameterType="Int">
+        delete from user where id=#{id};
+    </delete>
+</mapper>

@@ -1,0 +1,16 @@
+2019-04-29 19:21:44,705 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-04-29 19:21:44,801 96     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:21:44,801 96     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:21:44,801 96     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:21:44,801 96     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:24:12,144 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-04-29 19:24:12,252 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:24:12,252 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:24:12,252 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:24:12,252 108    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-04-29 19:24:12,324 180    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-04-29 19:24:12,535 391    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1946645411.
+2019-04-29 19:24:12,536 392    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@740773a3]
+2019-04-29 19:24:12,537 393    [           main] DEBUG  com.zhang.dao.UserDao.findAll  - ==>  Preparing: select * from user; 
+2019-04-29 19:24:12,557 413    [           main] DEBUG  com.zhang.dao.UserDao.findAll  - ==> Parameters: 
+2019-04-29 19:24:12,577 433    [           main] DEBUG  com.zhang.dao.UserDao.findAll  - <==      Total: 6
